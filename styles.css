@@ -1,5 +1,5 @@
 body {
-  background-color: #fffbf7;
+  background-color: rgb(224, 187, 149);
 }
 
 h1 {
@@ -41,40 +41,45 @@ li {
   font-family: sans-serif;
 }
 
-.logo {
+.header__
+logo {
     width: 15%;
 }
 
-.navbar{
+.header__navbar{
     width: 70%;
-    text-align: left;
+    text-align: center;
 
 }
 
-nav > ul > li {
+.header__nav--items li {
     padding-right: 25px;
     padding-left: 25px;
     color: #025157;
 }
 
-.actions{
+.header__actions{
     width: 15%;
     text-align: right;
     font-size: 14px;
 }
 
-.actions > *{
+.header__actions > *{
     padding-left: 10px;
     padding-right: 10px;
 }
 
 div>a{
     color: #67b54b;
-    
+    text-decoration: none;
 }
 div>button{
     color: white;
     background-color: #67b54b;
-    padding: 12px, 14px;
+    padding-top: 14px;
+    padding-right: 12px;
+    padding-bottom: 14px;
+    padding-left: 12px;
+    border: none;
     border-radius: 5px;
 }
