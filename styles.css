@@ -41,40 +41,104 @@ li {
   font-family: sans-serif;
 }
 
-.logo {
+.header__
+logo {
     width: 15%;
 }
 
-.navbar{
+.header__navbar{
     width: 70%;
-    text-align: left;
+    text-align: center;
 
 }
 
-nav > ul > li {
+.header__nav--items li {
     padding-right: 25px;
     padding-left: 25px;
     color: #025157;
 }
 
-.actions{
+.header__actions{
     width: 15%;
     text-align: right;
     font-size: 14px;
 }
 
-.actions > *{
+.header__actions > *{
     padding-left: 10px;
     padding-right: 10px;
 }
 
+/* .content__ads {
+  background-color: red;
+} */
+
 div>a{
     color: #67b54b;
+    text-decoration: none;
     
 }
 div>button{
     color: white;
     background-color: #67b54b;
-    padding: 12px, 14px;
+    padding-top: 14px;
+    padding-right: 12px;
+    padding-bottom: 14px;
+    padding-left: 12px;
+    border: none;
     border-radius: 5px;
 }
+
+.content__ads h3{
+  font-family: sans-serif;
+  font-size: 2em;
+  line-height: 48px;
+  color: #025157;
+  text-align: start;
+  font-weight: bold;
+}
+
+.content__ads > p{
+  color: #343434;
+  line-height: 1.5;
+}
+
+.content__ads > form p{
+  color: rgb(133, 131, 131)(133, 131, 131);
+  padding-right: 1.2em;
+}
+
+.content__ads > form input{
+  padding: 20px;
+  border-radius: 1em;
+  border-color: grey;
+}
+
+.content__ads > form button{
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  padding-right: 1.2em;
+}
+
+.content__multimedia{
+  width: 70%;
+  margin: 100px auto;
+  display: flex;
+
+}
+
+
+/* .content__vidimg{
+  display: flex;
+  align-items: center;
+} */
+
+.content__vidimg > section {
+  padding-right: 10px;
+} 
+
+.content__vidimg img{
+  width: 120px;
+  margin-top: 10px;
+}
+
