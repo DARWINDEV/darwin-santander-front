@@ -27,7 +27,7 @@ li {
 }
 
 .header {
- margin: 40px, 20px, 0, 20px;
+  margin: 40px, 20px, 0, 20px;
   font-size: 0;
   line-height: 45px;
 }
@@ -41,55 +41,52 @@ li {
   font-family: sans-serif;
 }
 
-.header__
-logo {
-    width: 15%;
+.header__logo {
+  width: 15%;
 }
 
-.header__navbar{
-    width: 70%;
-    text-align: center;
-
+.header__navbar {
+  width: 70%;
+  text-align: center;
 }
 
 .header__nav--items li {
-    padding-right: 25px;
-    padding-left: 25px;
-    color: #025157;
+  padding-right: 25px;
+  padding-left: 25px;
+  color: #025157;
 }
 
-.header__actions{
-    width: 15%;
-    text-align: right;
-    font-size: 14px;
+.header__actions {
+  width: 15%;
+  text-align: right;
+  font-size: 14px;
 }
 
-.header__actions > *{
-    padding-left: 10px;
-    padding-right: 10px;
+.header__actions > * {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* .content__ads {
   background-color: red;
 } */
 
-div>a{
-    color: #67b54b;
-    text-decoration: none;
-    
+div > a {
+  color: #67b54b;
+  text-decoration: none;
 }
-div>button{
-    color: white;
-    background-color: #67b54b;
-    padding-top: 14px;
-    padding-right: 12px;
-    padding-bottom: 14px;
-    padding-left: 12px;
-    border: none;
-    border-radius: 5px;
+div > button {
+  color: white;
+  background-color: #67b54b;
+  padding-top: 14px;
+  padding-right: 12px;
+  padding-bottom: 14px;
+  padding-left: 12px;
+  border: none;
+  border-radius: 5px;
 }
 
-.content__ads h3{
+.content__ads h3 {
   font-family: sans-serif;
   font-size: 2em;
   line-height: 48px;
@@ -98,35 +95,33 @@ div>button{
   font-weight: bold;
 }
 
-.content__ads > p{
+.content__ads > p {
   color: #343434;
   line-height: 1.5;
 }
 
-.content__ads > form p{
-  color: rgb(133, 131, 131)(133, 131, 131);
+.content__ads > form p {
+  color: rgb(133, 131, 131) (133, 131, 131);
   padding-right: 1.2em;
 }
 
-.content__ads > form input{
+.content__ads > form input {
   padding: 20px;
   border-radius: 1em;
   border-color: grey;
 }
 
-.content__ads > form button{
+.content__ads > form button {
   border-top-right-radius: 1em;
   border-bottom-right-radius: 1em;
   padding-right: 1.2em;
 }
 
-.content__multimedia{
+.content__multimedia {
   width: 70%;
   margin: 100px auto;
   display: flex;
-
 }
-
 
 /* .content__vidimg{
   display: flex;
@@ -135,10 +130,131 @@ div>button{
 
 .content__vidimg > section {
   padding-right: 10px;
-} 
+}
 
-.content__vidimg img{
+.content__vidimg img {
   width: 120px;
   margin-top: 10px;
 }
+
+.content__brands {
+  height: 120vh;
+  background-color: #a1d683;
+  display: flex;
+}
+
+.content__brands--team {
+  width: 50%;
+  margin: 100px 100px;
+  flex-direction: column;
+}
+
+.content__brands--team h2{
+  color: #025157;
+  font-size: 50px;
+}
+
+.content__brands--team p{
+  color: black;
+  line-height: 1.5em;
+}
+
+.content__brands--team button{
+  background-color: #025157;
+}
+
+.content__brands--team img {
+  padding-top: 5%;
+  width: 80%;
+  margin: auto;
+}
+
+.content__brand--case {
+  align-items: center;
+  max-height: 620px;
+  height: 100%;
+  max-width: 300px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 3%;
+  margin: 50px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.content__brand--case img {
+  max-height: 280px;
+  height: 100%;
+  max-width: 310;
+  width: 100%;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  object-fit: cover;
+}
+
+.content__brand--case-data {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.content__brand--header-color{
+  color: #025157;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.container__brand--text-black p{
+  color: black;
+  font-size: 20px;
+}
+
+.content__brand--case-icon {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.7em;
+  align-items: center;
+}
+
+.content__brand--case-icon p {
+  padding-left: 4%;
+  width: 60%;
+  font-size: 12px;
+  color: grey;
+}
+.content__brand--case-icon img {
+  width: 20px;
+}
+
+.content__brand--case-data button {
+  margin-top: 8px;
+  width: 100%;
+  background-color: #025157;
+}
+
+.content__circle {
+  position: absolute;
+  display: flex;
+  margin: 250px;
+  left: 66%;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #f9da73;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__cicle--wrapped{
+
+  width: 100%;
+  height: 100%;
+}
+
+.content__cicle--img{
+  width: 75px;
+}
+
+
 
