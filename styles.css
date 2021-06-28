@@ -135,13 +135,19 @@ div > button {
 .content__vidimg img {
   width: 120px;
   margin-top: 10px;
-}
-
-.content__brands {
-  height: 120vh;
-  background-color: #a1d683;
   display: flex;
 }
+
+/* #BRAND */
+
+.content__brands {
+  background-color: #a1d683;
+  padding: 5% 15%;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
 
 .content__brands--team {
   width: 50%;
@@ -237,7 +243,7 @@ div > button {
   position: absolute;
   display: flex;
   margin: 250px;
-  left: 66%;
+  left: 61%;
   height: 100px;
   width: 100px;
   border-radius: 50%;
@@ -255,6 +261,160 @@ div > button {
 .content__cicle--img{
   width: 75px;
 }
+.features .feature__card {
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #fff;
+  border: 1px solid #a0a0a0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
 
+.features .feature__card .feature__content {
+  padding-top: 30px;
+  padding-right: 15px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  flex: 2;
+}
 
+.features .feature__card .feature__img {
+  display: block;
+  flex: 1;
+  width: 40%;
+  position: relative;
+  right: -50px;
+  height: 80%;
+}
 
+.features .feature__card .feature__content > * {
+  margin: 1rem;
+  padding-top: 0;
+}
+
+.feature__content img {
+  width: 50px;
+}
+
+.feature__content h3 {
+  font-size: 1.8em;
+  color: #343434;
+  font-weight: 400;
+}
+
+.feature__content p {
+  font-size: 1em;
+  /* line-height: 1.5; */
+  color: #a0a0a0;
+  font-weight: 400;
+}
+
+.feature__content a {
+  font-size: 1em;
+  color: #67b54b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.feature__img img {
+  margin-top: 0;
+  height: 100%;
+}
+
+.features .feature-card .feature-image img {
+  margin-top: 0;
+  height: 100%;
+}
+/* ABOUT MATCHA */
+
+.aboutMatcha {
+  padding: 5% 10%;
+  text-align: center;
+}
+
+.aboutMatcha > h2 {
+  color: #025157;
+  font-size: 3.125em;
+  font-weight: regular;
+  color: #025157;
+}
+
+.aboutMatcha > p {
+  color: #383838;
+  width: 60%;
+  font-size: 1.2em;
+  font-weight: regular;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.aboutMatcha .greenWord {
+  color: #67b54b;
+  text-decoration: none;
+}
+
+.aboutMatcha > button {
+  padding: 1em 1.25em;
+  border-radius: 8px;
+  font-size: 0.8em;
+  color: #fff;
+  font-weight: 600;
+}
+
+.aboutMatcha__cards{
+  margin-top: 70px;
+}
+
+.aboutMatcha .aboutMatcha__cards .aboutMatcha__card{
+  background-color: #fff;
+  border: 1px solid #A0A0A0;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.aboutMatcha__imgCover{
+  width: 100%;
+  height: 100%;
+}
+
+.aboutMatcha__img{
+  position: relative;
+  height: 350px;
+}
+
+.aboutMatcha__content{
+  padding: 25px;
+  text-align: left;
+}
+
+.aboutMatcha__content h3{
+  text-align: center;
+  font-size: 1.875em;
+  line-height: 36px;
+  font-weight: regular;
+  color: #025157;
+
+}
+
+.aboutMatcha__content p{
+  margin-bottom: 1em;
+  color: #383838;
+}
+
+.aboutMatcha__content a{
+  font-weight: bold;
+  color: #67b54b;
+  line-height: 1.4;
+}
+
+.aboutMatcha__icon{
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 21px;
+}
