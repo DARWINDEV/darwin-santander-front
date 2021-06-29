@@ -5,6 +5,7 @@ body {
 h1 {
   color: blue;
   text-align: center;
+  font-size: 60px;
 }
 
 h2 {
@@ -148,24 +149,23 @@ div > button {
   justify-content: space-around;
 }
 
-
 .content__brands--team {
   width: 50%;
   margin: 100px 100px;
   flex-direction: column;
 }
 
-.content__brands--team h2{
+.content__brands--team h2 {
   color: #025157;
   font-size: 50px;
 }
 
-.content__brands--team p{
+.content__brands--team p {
   color: black;
   line-height: 1.5em;
 }
 
-.content__brands--team button{
+.content__brands--team button {
   background-color: #025157;
 }
 
@@ -205,13 +205,13 @@ div > button {
   text-align: left;
 }
 
-.content__brand--header-color{
+.content__brand--header-color {
   color: #025157;
   font-weight: bold;
   font-size: 0.9em;
 }
 
-.container__brand--text-black p{
+.container__brand--text-black p {
   color: black;
   font-size: 20px;
 }
@@ -252,15 +252,22 @@ div > button {
   align-items: center;
 }
 
-.content__cicle--wrapped{
-
+.content__cicle--wrapped {
   width: 100%;
   height: 100%;
 }
 
-.content__cicle--img{
+.content__cicle--img {
   width: 75px;
 }
+
+.features {
+  background-color: #025157;
+  padding: 5% 10%;
+  display: grid;
+  grid-template: repeat(2, 330px) / repeat(2, 1fr);
+}
+
 .features .feature__card {
   margin-bottom: 30px;
   margin-left: 15px;
@@ -364,57 +371,131 @@ div > button {
   font-weight: 600;
 }
 
-.aboutMatcha__cards{
+.aboutMatcha__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   margin-top: 70px;
 }
 
-.aboutMatcha .aboutMatcha__cards .aboutMatcha__card{
+.aboutMatcha .aboutMatcha__cards .aboutMatcha__card {
   background-color: #fff;
-  border: 1px solid #A0A0A0;
+  border: 1px solid #a0a0a0;
   border-radius: 5px;
   margin-left: 20px;
   margin-right: 20px;
   text-align: left;
 }
 
-.aboutMatcha__imgCover{
+.aboutMatcha__imgCover {
   width: 100%;
   height: 100%;
 }
 
-.aboutMatcha__img{
+.aboutMatcha__img {
   position: relative;
   height: 350px;
 }
 
-.aboutMatcha__content{
+.aboutMatcha__content {
   padding: 25px;
   text-align: left;
 }
 
-.aboutMatcha__content h3{
+.aboutMatcha__content h3 {
   text-align: center;
   font-size: 1.875em;
   line-height: 36px;
   font-weight: regular;
   color: #025157;
-
 }
 
-.aboutMatcha__content p{
+.aboutMatcha__content p {
   margin-bottom: 1em;
   color: #383838;
 }
 
-.aboutMatcha__content a{
+.aboutMatcha__content a {
   font-weight: bold;
   color: #67b54b;
   line-height: 1.4;
 }
 
-.aboutMatcha__icon{
+.aboutMatcha__icon {
   position: absolute;
   top: 25px;
   left: 25px;
   width: 21px;
+}
+
+/* VIEWPORTS */
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+  .header__navbar,
+  .header__actions {
+    display: none;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .content__h {
+    text-align: center;
+  }
+
+  .content__h > figure {
+    width: 100%;
+  }
+
+  .content .publish > form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 90%;
+    padding: 15px 20px;
+  }
+
+  .content .publish > form > input {
+    width: 90%;
+  }
+
+  .content .publish > form > button{
+    width: 92%;
+  }
+
+  .content .content__multimedia {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content .content__multimedia .content__vidimg > video {
+    width: 100%;
+  }
+
+  .content .content__multimedia h3 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  .features{
+    grid-template: repeat(4, 1fr) / 1fr;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .feature__img img{
+    display: none;
+  }
+}
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
 }
