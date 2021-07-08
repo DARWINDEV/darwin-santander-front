@@ -64,3 +64,16 @@
 .card-text{
     color: $gray;
 }
+
+@media (max-width : 575){
+  .blog{
+    .row{
+      display: grid;
+      .col{
+        float: left;
+        width: 90%;
+        padding: 5% 0%;
+      }
+    }
+  }
+}
