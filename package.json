@@ -1,0 +1,22 @@
+{
+  "name": "front-matcha",
+  "version": "1.0.0",
+  "description": "este es un proyecto de santander becas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DARWINDEV/darwin-santander-front.git"
+  },
+  "author": "Darwin Jimenez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DARWINDEV/darwin-santander-front/issues"
+  },
+  "homepage": "https://github.com/DARWINDEV/darwin-santander-front#readme",
+  "dependencies": {
+    "sass": "^1.35.1"
+  }
+}

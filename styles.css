@@ -46,10 +46,10 @@ li {
   width: 15%;
 }
 
-.header__navbar {
+/* .header__navbar {
   width: 70%;
   text-align: center;
-}
+} */
 
 .header__nav--items li {
   padding-right: 25px;
@@ -90,7 +90,7 @@ div > button {
 .content__ads h3 {
   font-family: sans-serif;
   font-size: 2em;
-  line-height: 48px;
+  /* line-height: 48px; */
   color: #025157;
   text-align: start;
   font-weight: bold;
@@ -107,7 +107,7 @@ div > button {
 }
 
 .content__ads > form input {
-  padding: 20px;
+  padding: 6px;
   border-radius: 1em;
   border-color: grey;
 }
@@ -115,11 +115,10 @@ div > button {
 .content__ads > form button {
   border-top-right-radius: 1em;
   border-bottom-right-radius: 1em;
-  padding-right: 1.2em;
 }
 
 .content__multimedia {
-  width: 70%;
+  width: 100%;
   margin: 100px auto;
   display: flex;
 }
@@ -265,7 +264,9 @@ div > button {
   background-color: #025157;
   padding: 5% 10%;
   display: grid;
-  grid-template: repeat(2, 330px) / repeat(2, 1fr);
+  grid-gap: 25px;
+  /* grid-template: repeat(2, 330px) / repeat(2, 1fr); */
+  grid-template: repeat(2, 600px) / repeat(2, 1fr);
 }
 
 .features .feature__card {
@@ -427,14 +428,35 @@ div > button {
   width: 21px;
 }
 
+footer{
+  background-color: #a1d683 ;
+}
+
+footer h5{
+  color: #025157;
+}
+
+footer p {
+  color : #383838;
+}
+
+footer ul>li>a {
+  color: #fff;
+}
+
 /* VIEWPORTS */
 /** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
-  .header__navbar,
+  /* .header__navbar,
   .header__actions {
     display: none;
-  }
+  } */
 
+  body{
+
+    overflow-y: scroll;
+  }
+  
   h1 {
     font-size: 30px;
   }
@@ -455,6 +477,21 @@ div > button {
     padding: 15px 20px;
   }
 
+  .content__multimedia{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .content__ads h3{
+    margin-top: 0.8rem;
+    font-size: 1.5em;
+  }
+  .content__ads p{
+    font-size: 0.9em;
+    text-align: justify;
+  }
+
   .content .publish > form > input {
     width: 90%;
   }
@@ -468,13 +505,22 @@ div > button {
     flex-direction: column;
   }
 
-  .content .content__multimedia .content__vidimg > video {
-    width: 100%;
-  }
-
   .content .content__multimedia h3 {
     font-size: 25px;
     line-height: 1.2;
+  }
+
+  .content__brands{
+    display: flex;
+    flex-direction: column;
+  }
+  .content__brands--team h2{
+    font-size: 1.8em;
+    text-align: justify;
+  }
+
+  .content__brands--team img{
+    width: 300px;
   }
 
   .features{
@@ -486,15 +532,143 @@ div > button {
   .feature__img img{
     display: none;
   }
+
+  .aboutMatcha > *{
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+  }
 }
 /** dispositivos pequeños en vista landscape (horizontal) */
 @media (min-width: 576px) and (max-width: 767px) {
+  body{
+
+    overflow-y: scroll;
+  }
+  
+  h1 {
+    font-size: 30px;
+  }
+
+  .content__h {
+    text-align: center;
+  }
+
+  .content__h > figure {
+    width: 100%;
+  }
+
+  .content .publish > form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 90%;
+    padding: 15px 20px;
+  }
+
+  .content__multimedia{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content .publish > form > input {
+    width: 90%;
+  }
+
+  .content .publish > form > button{
+    width: 92%;
+  }
+
+  .content .content__multimedia {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content .content__multimedia h3 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  .features{
+    grid-template-columns: repeat(2, 1fr) / 1fr;
+    grid-template-rows: repeat(2, 1fr) / 1fr;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .feature__img img{
+    display: none;
+  }
+
+  .aboutMatcha > *{
+    grid-template: repeat(4, 1fr) / 1fr;
+    gap: 25px;
+  }
+
 }
 /** dispositivos medianos (tablets) */
 @media (min-width: 768px) and (max-width: 991px) {
+
+
+  .content__ads h3{
+    font-size: 1.6em;
+  }
+
+  .content__ads p{
+    text-align: justify;
+  }
+
+  .feature__card h3{
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .feature__card p{
+    font-size: 1em;
+    font-weight: regular;
+    text-align: left;
+  }
+
+  .feature__card a{
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .aboutMatcha__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 70px;
+    gap: 1.2em;
+  }
+
+  .aboutMatcha__img {
+    position: relative;
+    height: 200px;
+  }
+  .content__multimedia{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content__brands--team h2{
+    font-size: 0.2em;
+    text-align: justify;
+  }
+
+
 }
 /** dispositivos grandes (desktops) */
 @media (min-width: 992px) and (max-width: 1199px) {
+  .content__ads h3{
+    font-size: 1.4em;
+  }
+  .content__ads p{
+    font-size: 0.9em;
+  }
+
 }
 /** dispositivos extra grandes (monitores grandes, tvs) */
 @media (min-width: 1200px) {
